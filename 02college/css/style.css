@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+/*header*/
+#header {min-width:1200px}
+#header-top {background:#0044af;}
+.top-menu {width:1200px; margin:0 auto;}
+.tMenu {float:left}
+.tMenu li {float:left; width:120px; }
+.tMenu li + li {margin-left:2px;}
+.tMenu li a {display:block; text-align:center; line-height:40px; background:#00163b; color:#fff;}
+#header .active {background:#fff; color:#000;}
+.uMenu {float:right}
+.uMenu li {float:left}
+.uMenu li + li {margin-left:12px;}
+.uMenu li a, .uMenu li > p {display:block; line-height:40px; font-size:12px; color:#fff}
+.size {width:34px; padding-top:12px; display:flex; justify-content:space-between;}
+.size li {width:16px;  background:#fff; line-height:16px; text-align:center; color:#9b9b9b; cursor:pointer}
+.size div {width:16px; height:16px; background:#fff; cursor:pointer}
+.size div p {line-height:12px; text-align:center; color:#9b9b9b}
+.nav {position:relative; width:1200px; margin:0 auto;}
+#logo {display:block; position:absolute; top:33px}
+.nav-menu {float:right}
+.mMenu {float:left; margin-right:54px;}
+.mMenu li {float:left;}
+.mMenu li + li {margin-left:52px}
+.mMenu li a {line-height:117px}
+.box {float:right; padding-top:36px; display:flex;}
+.box img {display:block}
+.box span {cursor:pointer}
+
+/*contents*/
+#contents {height: 1300px; background-image: url(../images/bg_dot.gif),url(../images/main_bg.jpg); background-repeat:repeat, no-repeat; background-position:center;
+           background-size:auto, cover; padding:100px 0}
+#contents .titleWrap {width: 1200px; height: 260px; background:violet; margin:0 auto; margin-bottom: 50px;}
+#contents .container {width: 1200px; margin:0 auto; background: #fff;}
+#contents .container > ul > li {float: left; width: 25%; height: 225px;}
+#contents .container > ul > li:nth-child(2n) {background: pink;}
+#contents .container > ul > li:nth-child(1) {width: 75%; height: 450px; background:gray;}
+#contents .container > ul > li:nth-child(2) {height: 450px;}
+#contents .container > ul > li:nth-child(3) {}
+#contents .container > ul > li:nth-child(4) {}
+#contents .container > ul > li:nth-child(5) {}
+#contents .container > ul > li:nth-child(6) {background:red;}
+#contents .container > ul > li:nth-child(7) {}
+#contents .container > ul > li:nth-child(8) {width: 75%;}
