@@ -3,14 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>한국대학교</title>
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".slider").bxSlider({
+          controls:false,
+          auto:true
+        });
+      });
+    </script>
 </head>
 <body>
     <header id="header">
         <div id="header-top">
-            <div class="top-menu clearfix">
-                <ul class="tMenu clearfix">
+            <div class="header-menu clearfix">
+                <ul class="hMenu clearfix">
                     <li><a  class="active" href="index.html">대학교</a></li>
                     <li><a href="#">입학안내</a></li>
                     <li><a href="#">대학원</a></li>
@@ -56,17 +67,42 @@
     </header>
     <div id="contents">
         <section class="titleWrap">
-            
+            <div class="title">
+              <h2>함께 나누며 세상을 이끌어</h2>
+              <h1>세계로향하는 한국대학교</h1>
+            </div>
+            <div class="tMenu">
+              <ul class="ticon clearfix">
+                <li>
+                  <a href="#"><img src="images/ticon1.png" alt=""></a>
+                  <p>입학절차안내</p>
+                </li>
+                <li>
+                  <a href="#"><img src="images/ticon2.png" alt=""></a>
+                  <p>입학설명회</p>
+                </li>
+                <li>
+                  <a href="#"><img src="images/ticon3.png" alt=""></a>
+                  <p>장학제도</p>
+                </li>
+                <li>
+                  <a href="#"><img src="images/ticon4.png" alt=""></a>
+                  <p>증명서발급</p>
+                </li>
+              </ul>
+            </div>
         </section>
         <div class="container">
             <ul class="clearfix">
                 <li>
                     <div class="sliderWrap">
                         <ul class="slider">
-                            <li><img src="" alt=""></li>
-                            <li><img src="" alt=""></li>
-                            <li><img src="" alt=""></li>
+                            <li><img src="images/contents1.jpg" alt=""></li>
+                            <li><img src="images/contents1.jpg" alt=""></li>
+                            <li><img src="images/contents1.jpg" alt=""></li>
+                            <li><img src="images/contents1.jpg" alt=""></li>
                         </ul>
+                        
                     </div>
                 </li>
                 <li>02</li>
@@ -78,7 +114,7 @@
                 <li>08</li>
             </ul>
         </div>
-        
+
     </div>
 </body>
 </html>

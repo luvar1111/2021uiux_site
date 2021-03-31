@@ -1,13 +1,30 @@
 @charset "utf-8";
 
+/* jquery */
+.bx-wrapper {
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  box-shadow:none;
+  border:0 none;
+  margin-bottom:0;
+}
+.bx-wrapper .bx-pager {
+  bottom: 40px;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active,
+.bx-wrapper .bx-pager.bx-default-pager a:focus {
+  background: #0045af;
+}
+
 /*header*/
 #header {min-width:1200px}
 #header-top {background:#0044af;}
-.top-menu {width:1200px; margin:0 auto;}
-.tMenu {float:left}
-.tMenu li {float:left; width:120px; }
-.tMenu li + li {margin-left:2px;}
-.tMenu li a {display:block; text-align:center; line-height:40px; background:#00163b; color:#fff;}
+.header-menu {width:1200px; margin:0 auto;}
+.hMenu {float:left}
+.hMenu li {float:left; width:120px; }
+.hMenu li + li {margin-left:2px;}
+.hMenu li a {display:block; text-align:center; line-height:40px; background:#00163b; color:#fff;}
 #header .active {background:#fff; color:#000;}
 .uMenu {float:right}
 .uMenu li {float:left}
@@ -29,13 +46,20 @@
 .box span {cursor:pointer}
 
 /*contents*/
-#contents {height: 1300px; background-image: url(../images/bg_dot.gif),url(../images/main_bg.jpg); background-repeat:repeat, no-repeat; background-position:center;
-           background-size:auto, cover; padding:100px 0}
-#contents .titleWrap {width: 1200px; height: 260px; background:violet; margin:0 auto; margin-bottom: 50px;}
+#contents {height: 1300px; background-image: url(../images/bg_dot.gif),url(../images/main_bg1.jpg); background-repeat:repeat, no-repeat; background-position:center, top;
+           background-size:auto, cover;}
+#contents .titleWrap {width: 1200px; height: 260px; margin:0 auto; display:flex; justify-content:space-between; padding-top: 80px;}
+.title {color: #fff;}
+.title h2 {font-size: 42px; font-weight:lighter;}
+.title h1 {font-size: 60px;}
+.tMenu .ticon li {float: left;}
+.tMenu .ticon li + li {margin-left:18px;}
+.tMenu .ticon li a {display: block;}
+.tMenu .ticon li p {text-align: center; color: #fff;}
 #contents .container {width: 1200px; margin:0 auto; background: #fff;}
 #contents .container > ul > li {float: left; width: 25%; height: 225px;}
 #contents .container > ul > li:nth-child(2n) {background: pink;}
-#contents .container > ul > li:nth-child(1) {width: 75%; height: 450px; background:gray;}
+#contents .container > ul > li:nth-child(1) {width: 75%; height: 450px; background:}
 #contents .container > ul > li:nth-child(2) {height: 450px;}
 #contents .container > ul > li:nth-child(3) {}
 #contents .container > ul > li:nth-child(4) {}
