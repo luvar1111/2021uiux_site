@@ -74,8 +74,8 @@
 .sliderWrap .prevbtn {left: 0;}
 .sliderWrap .nextbtn {right: 0;}
 
-#contents .container > ul > li:nth-child(2) {height: 450px; background:url(../images/contents2.jpg) no-repeat;}
-.content2 {padding-top: 75px; padding-left: 38px;}
+#contents .container > ul > li:nth-child(2) {height: 450px; background:url(../images/contents2.jpg) no-repeat; padding-top: 75px; padding-left: 38px;}
+.content2 {}
 .content2  p {color: #fff;}
 .content2 .txt1 {font-size: 35px; font-weight:lighter; margin-bottom: 25px; }
 .content2 .txt2 {font-size: 17px; margin-bottom: 35px;}
@@ -83,23 +83,38 @@
 .content2 a p {position: absolute; left: 42px; line-height: 40px; font-size: 14px;}
 .content2 a img {display: block; position: absolute; top: 15px; right: 42px;}
 
-#contents .container > ul > li:nth-child(3) {background: #00163b;}
-.content3 {padding-top: 27px; padding-left: 20px;}
+#contents .container > ul > li:nth-child(3) {background: #00163b; padding-top: 27px; padding-left: 20px;}
+.content3 {}
 .content3 h3, .content3 p {color: #fff;}
 .content3 p {font-size: 12px; text-align: center;}
 .content3 ul {padding-top: 36px; display:flex; justify-content: space-around;}
 .content3 ul li {float: left;}
 .content3 ul li img {margin-bottom: 5px;}
 
-#contents .container > ul > li:nth-child(4) {background: #1651b7;}
-.content4 {padding-top: 27px; padding-left: 20px}
-.content4 h3, .content4 a, .content4 span {color: #fff;}
-.content4 a, .content4 span {font-size: 12px;}
-.content4 h3 {margin-bottom: 20px;}
+#contents .container > ul > li:nth-child(4) {background: #1651b7; padding-top: 27px; padding-left: 20px;}
+.content4 {width: 260px;}
+.content4 h3, .content4 p, .content4 span {color: #fff;}
+.content4 p, .content4 span {font-size: 12px;}
+.content4 h3 {}
 .content4 h3:after {display: block; content:''; width: 260px; height: 2px; background: #fff; margin:20px 0;}
-.content4 ul li {margin-bottom: 10px;}
+.content4 ul li {margin-bottom: 13px; position: relative;}
+.content4 ul li:before {display: block; content:''; width: 3px; height: 3px; background: #fff; position: absolute; top: 8px;}
+.content4 li a {display: block; }
+.content4 li p {text-indent: 12px; width: 260px; ;position: relative;}
+.content4 li span {display: block; position: absolute; right:5px; top: 0;}
 
-#contents .container > ul > li:nth-child(5) {}
-#contents .container > ul > li:nth-child(6) {background:red;}
+#contents .container > ul > li:nth-child(5) {padding-top: 27px; padding-left: 20px;}
+.content5 {width: 260px; height: 180px; position: relative;}
+.content5 h3 {color: #00193b; margin-bottom: 20px;}
+.content5 .article img {float: left; display: block;  width: 115px; height: 80px; margin-right: 15px;}
+.content5 .article p {font-size: 13px; line-height: 20px;}
+.content5 ul {position: absolute; bottom: 0; right: 0;}
+.content5 ul li {float: left;}
+.content5 ul li + li {margin-left: 3px;}
+
+#contents .container > ul > li:nth-child(6) {background:url(../images/school1.jpg); width: 300px; height: 225px; position: relative;}
+.content6 {width: 100%; height:52px; text-align: center; line-height: 52px; color: #fff;  background:rgba(0, 0, 0, 0.7); position: absolute; bottom: 0; transition:0.5s}
+.content6:hover {height: 100%; top: 0; }
+
 #contents .container > ul > li:nth-child(7) {}
 #contents .container > ul > li:nth-child(8) {width: 75%;}
