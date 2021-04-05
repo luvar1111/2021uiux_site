@@ -8,13 +8,28 @@
   border:0 none;
   margin-bottom:0;
 }
+.bx-wrapper .bx-pager-item {
+    display: block; float: left;
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+    margin:0 0 0 10px;
+}
 .sliderWrap .bx-wrapper .bx-pager {
-  bottom: 40px;
+  width: auto; padding-top: 0; bottom:40px; left:400px;
 }
 .sliderWrap .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .sliderWrap .bx-wrapper .bx-pager.bx-default-pager a.active,
 .sliderWrap .bx-wrapper .bx-pager.bx-default-pager a:focus {
   background: #0045af;
+}
+.sliderWrap1 .bx-wrapper .bx-pager {
+    width: auto; padding-top: 0; top:26px; right:40px;
+}
+/*.sliderWrap1 .bx-wrapper {position: relative;}*/
+.sliderWrap1 .bx-wrapper .bx-pager.bx-default-pager a:hover,
+.sliderWrap1 .bx-wrapper .bx-pager.bx-default-pager a.active,
+.sliderWrap1 .bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background: #f74237;
 }
 
 /*header*/
@@ -31,41 +46,38 @@
 .uMenu li + li {margin-left:12px;}
 .uMenu li a, .uMenu li > p {display:block; line-height:40px; font-size:12px; color:#fff}
 .size {width:34px; padding-top:12px; display:flex; justify-content:space-between;}
-.size li {width:16px;  background:#fff; line-height:16px; text-align:center; color:#9b9b9b; cursor:pointer}
-.size div {width:16px; height:16px; background:#fff; cursor:pointer}
-.size div p {line-height:12px; text-align:center; color:#9b9b9b}
+.size div {width:16px; height:16px; background:#fff; color:#9b9b9b; text-align: center; line-height: 12px; cursor:pointer}
 .nav {position:relative; width:1200px; margin:0 auto;}
 #logo {display:block; position:absolute; top:33px}
 .nav-menu {float:right}
 .mMenu {float:left; margin-right:54px;}
 .mMenu li {float:left;}
 .mMenu li + li {margin-left:52px}
-.mMenu li a {line-height:117px}
+.mMenu li a {display: block; line-height:117px}
 .box {float:right; padding-top:36px; display:flex;}
 .box img {display:block}
 .box span {cursor:pointer}
 
 /*contents*/
-#contents {height: 1300px; background-image: url(../images/bg_dot.gif),url(../images/main_bg1.jpg); background-repeat:repeat, no-repeat; background-position:center, top;
-           background-size:auto, cover;}
+#contents {min-width: 1200px; height: 1300px; background-image: url(../images/bg_dot.gif),url(../images/main_bg1.jpg); background-repeat:repeat, no-repeat; background-position:center, top;
+           background-size:auto, cover}
 #contents .titleWrap {width: 1200px; height: 260px; margin:0 auto; padding-top: 80px;}
 .title {color: #fff; float: left;}
-.title h2 {font-size: 42px; font-weight:lighter;}
-.title h1 {font-size: 60px;}
+.title p {font-size: 42px; font-weight:lighter;}
+.title span {font-size: 60px; font-weight:bold;}
 .tMenu {float: right;}
 .tMenu .ticon li {float: left;}
 .tMenu .ticon li + li {margin-left:18px;}
 .tMenu .ticon li a {display: block;}
-.tMenu .ticon li p {text-align: center; color: #fff;}
+.tMenu .ticon li p {text-align: center; font-size: 14px; color: #fff;}
 
 #contents .container {width: 1200px; margin:0 auto; background: #fff;}
 #contents .container > ul > li {float: left; width: 25%; height: 225px;}
-#contents .container > ul > li:nth-child(2n) {background: pink;}
-#contents .container > ul > li:nth-child(1) {width: 75%; height: 450px;}
-.sliderWrap {position: relative;}
+
+#contents .container > ul > li:nth-child(1) {width: 75%; height: 450px; position: relative;}
 .sliderWrap .slider img {display: block;}
-.sliderWrap .content1 {position: absolute; top: 85px; left: 90px;}
-.sliderWrap .content1 > p {font-size: 60px; color: #1651b7; line-height: 1.2em; margin-bottom: 27px;}
+.sliderWrap .content1 {position: absolute; top: 80px; left: 90px;}
+.sliderWrap .content1 > p {font-size: 62px; color: #1651b7; line-height: 1.2em; margin-bottom: 27px;}
 .sliderWrap .content1 a {display:block; width:168px; height:40px; background:#182d4c; position: relative;}
 .sliderWrap .content1 a p {position: absolute; left: 42px; color:#fff; line-height:40px; font-size:14px;}
 .sliderWrap .content1 a img {display: block; position: absolute; right: 42px; top: 15px;}
@@ -75,7 +87,6 @@
 .sliderWrap .nextbtn {right: 0;}
 
 #contents .container > ul > li:nth-child(2) {height: 450px; background:url(../images/contents2.jpg) no-repeat; padding-top: 75px; padding-left: 38px;}
-.content2 {}
 .content2  p {color: #fff;}
 .content2 .txt1 {font-size: 35px; font-weight:lighter; margin-bottom: 25px; }
 .content2 .txt2 {font-size: 17px; margin-bottom: 35px;}
@@ -84,15 +95,16 @@
 .content2 a img {display: block; position: absolute; top: 15px; right: 42px;}
 
 #contents .container > ul > li:nth-child(3) {background: #00163b; padding-top: 27px; padding-left: 20px;}
-.content3 {}
+.content3 {width: 260px;}
 .content3 h3, .content3 p {color: #fff;}
 .content3 p {font-size: 12px; text-align: center;}
-.content3 ul {padding-top: 36px; display:flex; justify-content: space-around;}
-.content3 ul li {float: left;}
-.content3 ul li img {margin-bottom: 5px;}
+.content3 ul {padding-top: 36px; width: 100%; display:flex; justify-content: space-around}
+.content3 ul li a {display: block;}
+.content3 ul li img {margin-bottom: 3px;}
 
-#contents .container > ul > li:nth-child(4) {background: #1651b7; padding-top: 27px; padding-left: 20px;}
-.content4 {width: 260px;}
+#contents .container > ul > li:nth-child(4) {background: #1651b7; padding-top: 27px; padding-left: 20px; position: relative; overflow: hidden;}
+#contents .container > ul > li:nth-child(4) img {display: block; position: absolute; width: 167px; height: 167px; bottom: 0; right: -28px; opacity:0.1;}
+.content4 {width: 260px; position: absolute; z-index:1}
 .content4 h3, .content4 p, .content4 span {color: #fff;}
 .content4 p, .content4 span {font-size: 12px;}
 .content4 h3 {}
@@ -106,15 +118,49 @@
 #contents .container > ul > li:nth-child(5) {padding-top: 27px; padding-left: 20px;}
 .content5 {width: 260px; height: 180px; position: relative;}
 .content5 h3 {color: #00193b; margin-bottom: 20px;}
-.content5 .article img {float: left; display: block;  width: 115px; height: 80px; margin-right: 15px;}
-.content5 .article p {font-size: 13px; line-height: 20px;}
+.content5 .article img {float: left; display: block;  width: 115px; height: 80px;}
+.content5 .article p {float: left; margin-left: 15px; font-size: 13px; line-height: 20px;}
 .content5 ul {position: absolute; bottom: 0; right: 0;}
 .content5 ul li {float: left;}
 .content5 ul li + li {margin-left: 3px;}
 
-#contents .container > ul > li:nth-child(6) {background:url(../images/school1.jpg); width: 300px; height: 225px; position: relative;}
-.content6 {width: 100%; height:52px; text-align: center; line-height: 52px; color: #fff;  background:rgba(0, 0, 0, 0.7); position: absolute; bottom: 0; transition:0.5s}
-.content6:hover {height: 100%; top: 0; }
+#contents .container > ul > li:nth-child(6) {background:url(../images/school1.jpg) no-repeat; width: 300px; height: 225px; position: relative; cursor:pointer}
+.content6 {width: 100%; height:52px; display:flex; justify-content: center; align-items: center; color: #fff;  background:rgba(0, 0, 0, 0.7); position: absolute; top: 173px; transition:0.5s}
+#contents .container > ul > li:nth-child(6):hover .content6 {height: 100%; top: 0; font-size: 20px; font-weight: bold;}
 
-#contents .container > ul > li:nth-child(7) {}
-#contents .container > ul > li:nth-child(8) {width: 75%;}
+#contents .container > ul > li:nth-child(7) {background:url(../images/school2.jpg) no-repeat; display:flex; justify-content: center; align-items: center}
+.content7 {display: block; width: 62px; height: 62px; border-radius:50%; background:rgba(0, 0, 0, 0.7); position: relative;}
+.content7 img {position: absolute; top: 17px; left: 23px;}
+
+#contents .container > ul > li:nth-child(8) {width: 75%; position: relative;}
+.sliderWrap1 .slider1 img {display: block;}
+.content8 {position: absolute; top: 32px; left: 40px;}
+.content8 > p {font-size: 30px; color: #f74237; margin-bottom: 27px;}
+.content8 span {font-size: 50px; font-weight: bold; line-height:0.9em; letter-spacing:0.5px}
+.content8 a {display: block; width: 170px; height: 42px; background:rgba(247, 66, 55, 0.8); border: 1px solid rgba(255, 255, 255, 0.8); position: relative;}
+.content8 a p {position: absolute; left: 37px; line-height: 40px; font-size: 14px; color: #fff;}
+.content8 a img {position: absolute; top: 15px; right: 37px;}
+
+/*footer*/
+#footer {min-width: 1200px; height: 165px; padding-top: 25px;}
+.footer-content {width: 1200px; margin: 0 auto;}
+.footer-logo {float: left; margin-left: 40px;}
+.footer-logo a {display: block; }
+.fMenu {float: left; margin-left: 60px;}
+.footer-info {margin-bottom: 12px;}
+.footer-info li {float: left; position: relative;}
+.footer-info li + li {margin-left: 36px;}
+.footer-info li a {display: block; font-size: 13px;}
+.footer-info li:nth-child(2):before {position: absolute; display: block; content:""; width: 1px; height: 12px; top: 3px; left: -18px; background: #000;}
+.footer-info li:nth-child(3):before,
+.footer-info li:nth-child(4):before,
+.footer-info li:nth-child(5):before,
+.footer-info li:nth-child(6):before {position: absolute; display: block; content:""; width: 1px; height: 12px; top: 3px; left: -6px; background: #000;}
+.address {margin-bottom: 6px;}
+.address li {color:#878787; font-size: 12px; line-height: 20px}
+#t1, #t3 {margin-left: 10px;}
+#t2 {margin-left: 20px;}
+#t4 {margin-left: 16px;}
+#t5 {margin-left: 18px;}
+#t6 {margin-left: 14px;}
+.fMenu p {color: #666; font-size: 13px;}

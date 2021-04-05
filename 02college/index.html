@@ -2,12 +2,16 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>한국대학교</title>
     <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/colorbox.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.colorbox-min.js"></script>
     <script>
       $(document).ready(function(){
         var mySlider = $(".slider").bxSlider({
@@ -19,6 +23,15 @@
         });
         $(".prevbtn").click(function(){
             mySlider.goToPrevSlide();
+        });
+        $(".slider1").bxSlider({
+            controls:false,
+            auto:true
+        });
+        $(".content7").colorbox({
+            iframe:true,
+            innerWidth:1177,
+            innerHeight:662.0625
         });
       });
     </script>
@@ -37,15 +50,9 @@
                         <p>글자크기</p>
                     </li>
                     <li>
-<!--
-                        <ul class="size clearfix">
-                            <li>-</li>
-                            <li>+</li>
-                        </ul>
--->
-                        <div class="size cleafix">
-                            <div><p><strong>-</strong></p></div>
-                            <div><p><strong>+</strong></p></div>
+                        <div class="size clearfix">
+                            <div><strong>-</strong></div>
+                            <div><strong>+</strong></div>
                         </div>
                     </li>
                     <li><a href="#">찾아오시는길</a></li>
@@ -55,7 +62,7 @@
             </div>
         </div>
         <div class="nav clearfix">
-            <a href="index.html"><img src="images/logo.jpg" alt="로고" id="logo"></a>
+            <h1><a href="index.html"><img src="images/logo.jpg" alt="로고" id="logo"></a></h1>
             <div class="nav-menu clearfix">
                 <ul class="mMenu clearfix">
                     <li><a href="#">대학소개</a></li>
@@ -74,8 +81,7 @@
     <div id="contents">
         <section class="titleWrap clearfix">
             <div class="title">
-              <h2>함께 나누며 세상을 이끌어</h2>
-              <h1>세계로향하는 한국대학교</h1>
+              <p>함께 나누며 세상을 이끌어<br><span>세계로향하는 한국대학교</span></p>
             </div>
             <div class="tMenu">
               <ul class="ticon clearfix">
@@ -142,8 +148,8 @@
                 </li>
                 <li>
                   <div class="content3">
-                    <h3>HOT LINK</h4>
-                    <ul class="clearfix">
+                    <h3>HOT LINK</h3>
+                    <ul>
                       <li>
                         <a href="#">
                           <img src="images/cicon1.png" alt="">
@@ -175,12 +181,13 @@
                         <li><a href="#"><p>[공지] 2016년 1학기 성적...<span>2016-05-14</span></p></a></li>
                     </ul>
                   </div>
+                  <img src="images/logo1.png" alt="">
                 </li>
                 <li>
                   <div class="content5">
                     <h3>SNS NEWS</h3>
-                    <div class="article clearfix">
-                      <a href="#">
+                    <div class="article ">
+                      <a href="#" class="clearfix">
                         <img src="images/school.jpg" alt="">
                         <p>한국 대학교는<br>2017학년도 신입생<br>입학식을 3월 2일(목)<br>본교 종합체육관... </p>
                       </a>
@@ -196,11 +203,50 @@
                 <li>
                   <div class="content6">캠퍼스 투어</div>
                 </li>
-                <li>07</li>
-                <li>08</li>
+                <li>
+                    <a href="https://www.youtube.com/embed/ymZRNh0t4C8" title="갈매기 절도" class="content7"><img src="images/play.png" alt=""></a>
+                </li>
+                <li>
+                    <div class="sliderWrap1">
+                        <ul class="slider1">
+                            <li><img src="images/student.jpg" alt=""></li>
+                            <li><img src="images/student.jpg" alt=""></li>
+                            <li><img src="images/student.jpg" alt=""></li>
+                            <li><img src="images/student.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="content8">
+                        <p>2017년 신&middot;편입생2차 모집<br><span>2017.7.1 ~ 7.10</span></p>
+                        <a href="#">
+                            <p>입학사전예약</p>
+                            <img src="images/arrow.png" alt="">
+                        </a>
+                    </div>
+                </li>
             </ul>
         </div>
-
     </div>
+    <footer id="footer">
+        <div class="footer-content clearfix">
+            <h1 class="footer-logo"><a href="#"><img src="images/logo.jpg" alt=""></a></h1>
+            <div class="fMenu">
+                <ul class="footer-info clearfix">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">한국 대학교</a></li>
+                    <li><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">이용정책</a></li>
+                    <li><a href="#">입점/제휴문의 및 광고</a></li>
+                    <li><a href="#">이메일 무단수집거부</a></li>
+                </ul>
+                <ul class="address">
+                    <li>대표자:홍길동<span id="t1">서울특별시 구로구 구로로 300 (구로동 6가)</span><span id="t2">사업자등록번호:123&ndash;56&ndash;7890234</span></li>
+                    <li>통신판매업 신고번호:제 1234&ndash;서울 구로구&ndash;1004호<span id="t3">개인정보관리 책임자:홍길동</span><span id="t4">소비자피해보상보험</span></li>
+                    <li>고객센터:1234&ndash;5678<span id="t5">FAX:02&ndash;1234&ndash;5678</span><span id="t6">HANGUKUNIVERSITY&#64;HANGUK.COM</span></li>
+
+                </ul>
+                <p>COPYRIGHT&copy;HANGUK. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
