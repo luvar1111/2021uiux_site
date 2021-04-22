@@ -6,12 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Himedia Tour</title>
+  <link rel="stylesheet" href="css/animate.compat.css">
   <link rel="stylesheet" href="css/jquery.bxslider.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
   <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/wow.js"></script>
   <script src="js/jquery.bxslider.js"></script>
   <script>
     $(document).ready(function() {
@@ -44,6 +46,7 @@
         mySlider1.goToPrevSlide();
       });
     });
+    new WOW().init();
   </script>
 </head>
 
@@ -91,11 +94,11 @@
       <img src="images/balloon5.png" alt="풍선3" class="img3">
       <img src="images/balloon6.png" alt="풍선4" class="img4">
       <div class="title">
-        <h1>TRAVEL GO</h1>
-        <h3>지금, 여행이 떠나고 싶다면?<br>하이미디어와 여행을 떠나자!</h3>
-        <div class="underline"></div>
+        <h1 class="wow flipInX">TRAVEL GO</h1>
+        <h3 class="wow bounceInLeft" data-wow-delay="0.2s">지금, 여행이 떠나고 싶다면?<br>하이미디어와 여행을 떠나자!</h3>
+        <div class="underline wow fadeInUp" data-wow-delay="0.6s"></div>
       </div>
-      <div class="formWrap clearfix">
+      <div class="formWrap clearfix wow flipInY" data-wow-delay="1s">
         <div class="sliderWrap">
           <ul class="formbox slider">
             <li>
@@ -328,29 +331,39 @@
         </div>
       </div>
       <ul class="contbox clearfix">
-        <li>
+        <li class="wow rotateIn">
           <a href="#">
             <img src="images/content1.png" alt="프랑스">
+            <div class="l1"></div>
+            <div class="l2"></div>
+            <div class="l3"></div>
             <div class="tbox">
-              <p>프랑스<span>￦1,900,000~</span></p>
-              <img src="images/next.png" alt="다음">
               <div class="bar"></div>
+              <div class="tWrap">
+                <p>프랑스<span>￦1,900,000~</span></p>
+                <img src="images/next.png" alt="다음">
+              </div>
             </div>
           </a>
         </li>
-        <li>
+        <li class="wow rotateIn" data-wow-delay="0.2s">
           <a href="#">
             <img src="images/content2.png" alt="일본">
+            <div class="l1"></div>
+            <div class="l2"></div>
+            <div class="l3"></div>
             <div class="tbox">
-              <p>일본<span>￦890,000~</span></p>
-              <img src="images/next.png" alt="다음">
               <div class="bar"></div>
+              <div class="tWrap">
+                <p>일본<span>￦890,000~</span></p>
+                <img src="images/next.png" alt="다음">
+              </div>
             </div>
           </a>
         </li>
       </ul>
       <ul class="contbox1 clearfix">
-        <li>
+        <li class="wow fadeInLeftBig" data-wow-delay="0.3s">
           <div class="sliderWrap1">
             <ul class="slider1">
               <li>
@@ -389,7 +402,7 @@
             </div>
           </div>
         </li>
-        <li>
+        <li class="wow fadeInLeftBig" data-wow-delay="0.2s">
           <div class="sliderWrap1">
             <ul class="slider2">
               <li>
@@ -428,18 +441,20 @@
             </div>
           </div>
         </li>
-        <li>
+        <li class="wow fadeInLeftBig" data-wow-delay="0.1s">
           <a href="#">
             <img src="images/content5.png" alt="도쿄날씨">
             <p>TOKYO</p>
             <div class="tbox1 b3">
-              <p>20℃<span>&nbsp;구름조금</span></p>
-              <p>습도 60% 바람 남남동 2m/s</p>
               <div class="bar"></div>
+              <div class="tWrap">
+                <p>20℃<span>&nbsp;구름조금</span></p>
+                <p>습도 60% 바람 남남동 2m/s</p>
+              </div>
             </div>
           </a>
         </li>
-        <li>
+        <li class="wow fadeInLeftBig">
           <a href="#">
             <img src="images/content6.png" alt="여행후기">
             <div class="review">
@@ -448,15 +463,17 @@
               <span class="star">★★★</span><span>★★</span>
             </div>
             <div class="tbox1 b4">
-              <p>facebook 여행후기</p>
-              <span>(임정희님)</span>
               <div class="bar"></div>
+              <div class="tWrap">
+                <p>facebook 여행후기</p>
+                <span>(임정희님)</span>
+              </div>
             </div>
           </a>
         </li>
       </ul>
       <ul class="contbox2 clearfix">
-        <li>
+        <li class="wow fadeInRightBig">
           <a href="#">
             <img src="images/content7.png" alt="여행정보">
             <div class="bg"></div>
@@ -470,7 +487,7 @@
             </div>
           </a>
         </li>
-        <li>
+        <li class="wow fadeInRightBig" data-wow-delay="0.1s">
           <a href="#">
             <img src="images/content8.png" alt="맛집정보">
             <div class="bg"></div>
@@ -484,7 +501,7 @@
             </div>
           </a>
         </li>
-        <li>
+        <li class="wow fadeInRightBig" data-wow-delay="0.2s">
           <a href="#">
             <img src="images/content9.png" alt="숙박정보">
             <div class="bg"></div>
@@ -498,7 +515,7 @@
             </div>
           </a>
         </li>
-        <li>
+        <li class="wow fadeInRightBig" data-wow-delay="0.3s">
           <a href="#">
             <img src="images/content10.png" alt="여행자후기">
             <div class="bg"></div>

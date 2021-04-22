@@ -45,32 +45,32 @@ body {min-width: 980px; font-family: 'Roboto', sans-serif;}
 
 /* container */
 #container {height: 1123px; padding-top: 55px; position: relative; overflow: hidden;}
-#container .img {position: absolute; left: -4500px; bottom: -2000px; transform:scale(1.5) rotate(5deg);
+#container .img {position: absolute; left: -4500px; bottom: -2500px; transform:scale(1.5) rotate(5deg);
                  animation:air 6s linear forwards infinite}
 @keyframes air  {to {left: 100%; bottom: 100%}}
 
 /*contWrap*/
 .contWrap {width: 980px; margin: auto; position: relative;}
-.contWrap a {display: block; color: #fff;}
+.contWrap a {display: block; color: #fff; position:relative;}
 
 .contWrap .img1 {position:absolute; right:80px; top:200px; animation:bal01 2s ease-in-out infinite alternate}
 @keyframes bal01 {to {top: 250px;}}
-.contWrap .img2 {position:absolute; left:-320px; top:200px; animation:bal02 6s linear infinite alternate}
+.contWrap .img2 {position:absolute; left:-350px; top:200px; animation:bal02 6s linear infinite alternate}
 @keyframes bal02 {0% {transform: rotate(-10deg)}
                   25% {transform: rotate(-5deg)}
                   50% {transform: rotate(0deg)}
                   75% {transform: rotate(-5deg)}
                   100% {top:0; transform:rotate(-10deg)}}
-.contWrap .img3 {position:absolute; left:-320px; top:700px; animation:bal03 6s ease-in-out infinite alternate}
+.contWrap .img3 {position:absolute; left:-350px; top:700px; animation:bal03 6s ease-in-out infinite alternate}
 @keyframes bal03 {to {top: 500px; transform:rotate(60deg) scale(1.2)}}
-.contWrap .img4 {position:absolute; right:-320px; top:550px; animation:bal04 14s ease-in-out infinite alternate}
+.contWrap .img4 {position:absolute; right:-350px; top:550px; animation:bal04 10s ease-in-out infinite alternate}
 @keyframes bal04 {50% {top: 150px; transform:rotate(5deg) scale(1.3)}
                   100% {top: 550px; transform:rotate(15deg) scale(1.1)}}
 
-.contWrap .title {color: #152630; position: absolute; top: 20px; right: 100px;}
-.contWrap .title h1 {font-size: 68px; font-weight: bold;}
-.contWrap .title h3 {font-size: 30px; letter-spacing: -3px}
-.contWrap .title .underline {width:80px; height:5px; background:#152630; position:absolute; right:5px; top:75px}
+.title {color: #152630; position: absolute; top: 20px; right: 100px;}
+.title h1 {font-size: 68px; font-weight: bold;}
+.title h3 {font-size: 30px; letter-spacing: -3px}
+.title .underline {width:80px; height:5px; background:#152630; position:absolute; right:5px; top:75px}
 
 fieldset {border:0 none}
 legend {display: block; position: absolute; top: -9999px;}
@@ -94,7 +94,7 @@ legend {display: block; position: absolute; top: -9999px;}
                                border-radius:5px; text-indent: -9999px; cursor:pointer}
 .formWrap .formbox .searchbox:hover {background: #CF4318 url(../images/searchimg.png) no-repeat center}
 .formWrap .formTab {width: 132px; background: #0099CB; position: absolute; left: 0; top: 0;}
-.formWrap .formTab a {height:75px; line-height:75px; font-size:16px; font-weight:bold; position:relative;}
+.formWrap .formTab a {height:75px; line-height:75px; font-size:16px; font-weight:bold;}
 .formWrap .formTab a .icon {width:30px; font-size:20px; position:absolute; left:12px; text-align:center;}
 .formWrap .formTab a .txt {width: 85px; position: absolute; right: 0; text-align: left;}
 .formWrap .formTab a .fa-mouse {transform:rotate(-30deg)}
@@ -109,60 +109,65 @@ legend {display: block; position: absolute; top: -9999px;}
 .formWrap .formTab a.active span {display:none}
 .bx-wrapper {border:0 none; box-shadow:none; margin-bottom:0;}
 
+.formWrap ~ ul > li + li {margin-left: 16px}
+.formWrap ~ ul > li {float: left;}
 .contbox, .contbox1 {margin-bottom: 16px;}
-.contbox li, .contbox1 > li, .contbox2 li {float: left; position: relative; overflow: hidden}
-.contbox li:last-child {margin-left: 16px;}
-.contbox .tbox {width:233px; height:50px; background:#152630; position:absolute; bottom:0;
-                   line-height: 50px; padding-left: 20px;}
-.contbox .bar {_width: 100%; height: 50px;}
+.contbox img, .contbox2 img {transition:.3s}
+.contbox a:hover img, .contbox2 a:hover img {transform:scale(1.2)}
+.contbox li, .contbox2 li {overflow: hidden;}
+.tbox, .tbox1 {width:100%; position:absolute; bottom:0; padding-left:20px;}
+
+.contbox .l1 {width: 10px; height: 190px; background: #1F5778; position: absolute; left: 0; bottom: 50px;
+              transform:scaleY(0); transition:transform .1s .1s; transform-origin: 50% 0}
+.contbox .l2 {width:233px; height: 10px; background: #1F5778; position: absolute; left: 0; top: 0;
+              transform:scaleX(0); transition:transform .1s .2s; transform-origin:100% 50%}
+.contbox .l3 {width: 10px; height:190px; background: #1F5778; position: absolute; right: 0; bottom: 50px;
+              transform:scaleY(0); transition:transform .1s .3s; transform-origin:50% 100%}
+.contbox a:hover .l1 {transform:scaleY(1); transform-origin:50% 100%}
+.contbox a:hover .l2 {transform:scaleX(1); transform-origin:0 50%}
+.contbox a:hover .l3 {transform:scaleY(1); transform-origin:50% 0;}
+.contbox .tbox {height:50px; line-height: 50px; background: #152630;}
+.contbox .tWrap {position: relative;}
+.contbox .bar {width: 100%; height: 50px; background: #1F5778; position: absolute; right: 0; bottom: 0;
+               transform:scaleX(0); transform-origin:0 50%; transition:transform .1s}
+.contbox a:hover .bar {transform:scaleX(1); transform-origin:100% 50%}
 .contbox .tbox p {color: #fff; font-size: 18px; position: relative; letter-spacing: -1px}
 .contbox .tbox span {display:block; color:#6DBD62; position:absolute; top:0; right:40px}
 .contbox .tbox img {position: absolute; top: 19px; right: 20px;}
-.contbox img, .contbox1 img, .contbox2 img {transition:.3s;}
-.contbox a:hover img, .contbox1 li a:hover img, .contbox2 li a:hover img {transform:scale(1.2)}
+.contbox a:hover .tbox p {font-weight:900;}
 .contbox a:hover .tbox img {right:5px;}
-.contbox a:hover .tbox, .contbox1 a:hover .tbox1 {font-weight: bold;}
-.bar {background:rgba(255, 0, 0, 0.5); position: absolute; left:0; bottom:0;
-      transform:scaleX(0);
-      -webkit-transform-origin: 0 50%;
-      -moz-transform-origin: 0 50%;
-      -ms-transform-origin: 0 50%;
-      -o-transform-origin: 0 50%;
-      transform-origin: 0 50%;
-       transition:.3s;width: 100%;}
-/* .contbox a:hover .bar,  */
-.contbox1 a:hover .bar {transform:scaleX(1);
-  -webkit-transform-origin: 100% 50%;
-  -moz-transform-origin: 100% 50%;
-  -ms-transform-origin: 100% 50%;
-  -o-transform-origin: 100% 50%;
-  transform-origin: 100% 50%;}
 
-.contbox1 > li + li, .contbox2 li + li {margin-left: 16px}
-.contbox1 .sliderWrap1 {width: 233px; height: 240px; position: relative}
-.contbox1 .tbox1 {width:100%; height:65px; position:absolute; bottom:0; padding-top:14px; padding-left:20px;
-                  font-size: 18px; letter-spacing: -1px; line-height: 20px}
-.contbox1 .bar {_width: 100%; height: 65px;}
-.sliderWrap1 .tbox1 {width: 279.6px; left: -23.3px; padding-left: 43.3px;}
+.sliderWrap1 {width: 233px; height: 240px; position: relative}
+.sliderWrap1 > div[class*="btn"] {width:34px; height:54px; background:rgba(0, 0, 0, 0.5); position:absolute; top:59px;
+                                  display:flex; justify-content:center; align-items:center; transition:.5s; cursor:pointer}
+.sliderWrap1 > div[class*="btn"] img {transition:.2s}
+.sliderWrap1 > div[class*="btn"]:hover {background: rgba(0, 0, 0, 0.8);}
+.sliderWrap1 > div[class*="btn"]:hover img {transform:scale(1.2)}
+.prevbtn, .prevbtn1 {left: 0;}
+.nextbtn, .nextbtn1 {right: 0;}
+.contbox1 .tbox1 {height:65px; padding-top:14px; font-size: 18px; letter-spacing: -1px; line-height: 20px}
 .contbox1 .tbox1.b1 {background: #529351;}
 .contbox1 .tbox1.b2 {background: #152630;}
 .contbox1 .tbox1.b1 span,
 .contbox1 .tbox1.b2 span {display:block; font-size: 14px; letter-spacing:0; line-height: 18px}
 .contbox1 .star {color: #E2A300; float: left;}
-.prevbtn, .prevbtn1, .nextbtn, .nextbtn1 {width:34px; height:54px; background:rgba(0, 0, 0, 0.5); position:absolute; top:59px;
-                                          display:flex; justify-content:center; align-items:center; cursor:pointer}
-.prevbtn, .prevbtn1 {left: 0;}
-.nextbtn, .nextbtn1 {right: 0;}
 .contbox1 > li:nth-child(3) a > p {width:100%; text-align:center; position:absolute; top:18px; font-size:20px}
 .contbox1 .tbox1.b3 {background:rgba(0, 0, 0, 0.6); line-height: 18px}
 .contbox1 .tbox1.b3 span {font-size: 16px}
-.contbox1 .tbox1.b3 p:last-child {font-size: 14px; line-height: 24px}
-.contbox1 .review {position: absolute; top: 18px; left: 24px; color: #000; font-size: 15px}
-.contbox1 .review p:first-child {margin-bottom: 14px; line-height: 22px; letter-spacing: -2px}
+.contbox1 .tbox1.b3 p + p {font-size: 14px; line-height: 24px}
+.contbox1 .review {position: absolute; top: 18px; left: 20px; color: #000; font-size: 15px}
+.contbox1 .review p:nth-child(1) {margin-bottom: 16px; line-height: 22px; letter-spacing: -1px}
 .contbox1 .review p:nth-child(2) {font-size: 13px; color: #42609E; letter-spacing: -1px}
 .review span {color: #7E7E7E;}
 .contbox1 .tbox1.b4 {background: #44619D;}
 .contbox1 .tbox1.b4 span {font-size: 16px;}
+.contbox1 a:hover .tbox1 {font-weight:900;}
+.contbox1 .tWrap {position: relative;}
+.contbox1 .bar {position:absolute; left:0; bottom:0; width:100%; height:65px;
+                transform:scaleX(0); transition:transform .3s;  transform-origin:100% 50%;}
+.tbox1.b3 .bar {background: rgba(0, 0, 0, 0.6);}
+.tbox1.b4 .bar {background: #23314D;}
+.contbox1 a:hover .bar {transform:scaleX(1);transform-origin: 0 50%;}
 
 .contbox2 .tbox2 {position:absolute; top:25px; left:34px; color:#fff; text-align:center; font-size:20px; transition:.3s}
 .contbox2 .tbox2 h4 {margin-bottom: 8px;}

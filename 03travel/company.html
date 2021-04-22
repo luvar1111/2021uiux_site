@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Himedia Tour</title>
+    <link rel="stylesheet" href="css/animate.compat.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
     <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </head>
 
 <body id="sub">
@@ -51,13 +56,13 @@
     </header>
     <div id="container-sub">
         <div class="sub-bg">
-            <h1>COMPANY<i class="fas fa-globe"></i></h1>
-            <hr>
-            <p><span>회사소개</span>&nbsp;하이미디어와 여행을 떠나세요</p>
+            <h1 class="wow fadeInDown">COMPANY<i class="fas fa-globe"></i></h1>
+            <hr class="wow fadeInLeft" data-wow-delay="0.2s">
+            <p class="wow flipInX" data-wow-delay="0.4s"><span>회사소개</span>&nbsp;하이미디어와 여행을 떠나세요</p>
         </div>
     </div>
     <div class="content-sub">
-        <img src="images/sub-content.png" alt="회사소개">
+        <img src="images/sub-content.png" class="wow fadeIn" data-wow-delay="1s" alt="회사소개">
     </div>
     <footer id="footer">
         <div class="footerWrap">
