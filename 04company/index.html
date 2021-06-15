@@ -1,72 +1,513 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>company</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/jquery.bxslider.css">
-  <script src="js/jquery-3.1.1.min.js"></script>
-  <script src="js/jquery.bxslider.js"></script>
-  <script src="js/script.js"></script>
+ <!DOCTYPE html>
+ <html lang="ko">
 
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/responsive.css">
-</head>
-<body>
-  <header>
-    <div id="headerTop" class="clearfix">
-      <h1 class="logo"><a href="#">LOGO</a></h1>
-      <div class="toggleMenu">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </div>
-      <nav id="main_menu">
-        <ul class="clearfix">
-          <li><a href="#">회사소개</a></li>
-          <li><a href="#">윤리경영</a></li>
-          <li><a href="#">제품/기술</a></li>
-          <li><a href="#">지속가능성</a></li>
-          <li><a href="#">홍보채널</a></li>
-          <li><a href="#">인재채용</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="sliderWrap">
-      <ul class="slider">
-        <li class="slider1st">
-          <!-- <img src="images/mainimg01.jpg" alt=""> -->
-          <div class="slider_txt">
-            <h3>Lorem ipsum dolor sit.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, hic.</p>
-          </div>
-        </li>
-        <li class="slider2nd">
-          <!-- <img src="images/mainimg02.jpg" alt=""> -->
-          <div class="slider_txt">
-            <h3>Lorem ipsum dolor sit.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, hic.</p>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </header>
-  <div class="content">
-    <ul class="contList">
-      <li>1</li>
-      <li>2</li>
-      <li>3</li>
-      <li>4</li>
-      <li>5</li>
-      <li>6</li>
-      <li>7</li>
-      <li>8</li>
-      <li>9</li>
-      <li>10</li>
-      <li>11</li>
-    </ul>
-  </div>
-</body>
-</html>
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Salmon Academy</title>
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/animate.compat.css">
+   <link rel="stylesheet" href="css/jquery.bxslider.css">
+   <link rel="stylesheet" href="css/owl.carousel.min.css">
+   <link rel="stylesheet" href="css/colorbox.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/responsive.css">
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+ </head>
+
+ <body>
+   <header id="header">
+     <div class="fixed-area">
+       <!-- w100% -->
+       <div class="headerTop">
+         <!-- 1240px -->
+         <h1 class="logo"><a href="index.html">연어아카데미</a></h1>
+         <div class="header-tit">연어아카데미</div>
+         <div class="toggleBtn">
+           <div class="bar1"></div>
+           <div class="bar2"></div>
+           <div class="bar3"></div>
+         </div>
+         <nav class="menuWrap">
+           <ul class="main-menu clearfix">
+             <li>
+               <a href="#!">노르웨이</a>
+               <div class="underline"></div>
+             </li>
+             <li>
+               <a href="#!">노르웨이 연어</a>
+               <div class="underline"></div>
+             </li>
+             <li>
+               <a href="#!">지속 가능한 양식업</a>
+               <div class="underline"></div>
+             </li>
+             <li>
+               <a href="#!">구매 및 판매</a>
+               <div class="underline"></div>
+             </li>
+             <li>
+               <a href="#!">준비 및 조리</a>
+               <div class="underline"></div>
+             </li>
+
+           </ul>
+           <ul class="language clearfix">
+             <li class="active">KOR</li>
+             <li>ENG</li>
+           </ul>
+           <ul class="follow clearfix">
+             <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
+             <li><a href="#!"><i class="fab fa-twitter"></i></a></li>
+             <li><a href="#!"><i class="fab fa-youtube"></i></a></li>
+           </ul>
+         </nav>
+       </div> <!-- headerTop -->
+     </div> <!-- fixed-area -->
+     <div class="sliderWrap">
+       <!-- w100% -->
+       <ul class="slider">
+         <li class="slider1st">
+           <div class="slider-txt">
+             <h1>원산지의 중요성</h1>
+             <p>노르웨이는 춥습니다. 아주 춥죠. 이러한 환경이 사람에게는 고난이 될 수 있
+               으나, 연어에게는 완벽한 환경이 됩니다.</p>
+           </div>
+         </li>
+         <li class="slider2nd">
+           <div class="slider-txt">
+             <h1>노르웨이 연어를 알아보세요</h1>
+             <p>노르웨이산 연어. 알에서 성어까지 전문성을 가지고 키웁니다.</p>
+           </div>
+         </li>
+         <li class="slider3rd">
+           <div class="slider-txt">
+             <h1>지속 가능한 양식업</h1>
+             <p>노르웨이는 바다를 중심으로 세워진 국가입니다. 노르웨이가 미래를 준비하는 방식을 확인해 보세요.</p>
+           </div>
+         </li>
+         <li class="slider4th">
+           <div class="slider-txt">
+             <h1>뛰어난 맛의 감동을 느껴보세요</h1>
+             <p>다양한 요리에 활용할 수 있는 노르웨이 연어를 즐기는 방법을 알아보세요.</p>
+           </div>
+         </li>
+         <li class="slider5th">
+           <div class="slider-txt">
+             <h1>노르웨이 연어를 가장 훌륭하게 활용하는 방법</h1>
+             <p>필렛, 스트립, 큐브, 회 등 연어를 활용하는 법을 알아보세요.</p>
+           </div>
+         </li>
+       </ul>
+       <div class="btn left">
+         <div class="prev">이전</div>
+       </div>
+       <div class="btn right">
+         <div class="next">다음</div>
+       </div>
+       <div class="pager">
+         <a href="#" data-slide-index="0"></a>
+         <a href="#" data-slide-index="1"></a>
+         <a href="#" data-slide-index="2"></a>
+         <a href="#" data-slide-index="3"></a>
+         <a href="#" data-slide-index="4"></a>
+       </div>
+     </div> <!-- sliderWrap -->
+   </header>
+   <div id="container">
+     <section id="contents1">
+       <!-- 1240px -->
+       <div class="cont1">
+         <a href="#!">
+           <img src="images/content1.jpg" alt="노르웨이 바다">
+           <div class="cont1-tit">
+             <h4>노르웨이 연어가 자라는 곳 &ndash;</h4>
+             <h4>차고 깨끗한 노르웨이 바다</h4>
+           </div>
+           <div class="cont1-img">
+             <img src="images/salmon-icon1.png" alt="연어1">
+             <div class="cont1-txt">
+               <div class="arrow">화살표</div>
+               <p class="txt1">자세히 보기</p>
+               <p class="txt2">노르웨이는 바다 양식장에서 자라는<br>
+                 대서양 연어가 번식하기에 이상적인 환경을 갖추고 있습니다.</p>
+             </div>
+           </div>
+         </a>
+       </div>
+       <div class="cont2 sliderWrap1">
+         <ul class="slider1">
+           <li>
+             <a href="#!">
+               <h3>연어 양식</h3>
+               <p>전세계적으로 인정받는 노르웨이의 친환경 연어 양식에 대해 알아보세요.</p>
+             </a>
+           </li>
+           <li>
+             <a href="#!">
+               <h3>포장 및 운송</h3>
+               <p>노르웨이는 양식 기술 못지 않게 혁신적인 방법으로 연어를 유통하고 있습니다.</p>
+             </a>
+           </li>
+           <li>
+             <a href="#!">
+               <h3>연어 손질</h3>
+               <p>연어 손질법을 통해 노르웨이 연어에 대해 더 자세히 알아보세요.</p>
+             </a>
+           </li>
+           <li>
+             <a href="#!">
+               <h3>구입처 안내</h3>
+               <p>노르웨이 연어를 구입할 수 있는 곳을 알아보세요.</p>
+             </a>
+           </li>
+         </ul>
+         <ul class="slider1">
+           <li><a href="#!"><img src="images/content2-1.jpg" alt="양식장"></a></li>
+           <li><a href="#!"><img src="images/content2-2.jpg" alt="포장 및 운송"></a></li>
+           <li><a href="#!"><img src="images/content2-3.jpg" alt="연어 필렛"></a></li>
+           <li><a href="#!"><img src="images/content2-4.jpg" alt="연어 시장"></a></li>
+         </ul>
+         <div class="controls">
+           <span class="prev">이전</span>
+           <span class="next">다음</span>
+         </div>
+       </div>
+       <div class="cont3 owl-carousel">
+         <div class="cont3-1">
+           <a href="#!">
+             <img src="images/content3-1.jpg" alt="연어 토막">
+             <h3>품질과 맛</h3>
+             <div class="fill">
+               <div class="fill-icon">
+                 <p>자세히 보기 <span>화살표</span></p>
+               </div>
+             </div>
+           </a>
+         </div>
+         <div class="cont3-2">
+           <a href="#!">
+             <img src="images/content3-2.jpg" alt="연어 구이">
+             <h3>건강과 영양</h3>
+             <div class="fill">
+               <div class="fill-icon">
+                 <p>자세히 보기 <span>화살표</span></p>
+               </div>
+             </div>
+           </a>
+         </div>
+         <div class="cont3-3">
+           <a href="#!">
+             <img src="images/content3-3.jpg" alt="양식장">
+             <h3>지속가능성</h3>
+             <div class="fill">
+               <div class="fill-icon">
+                 <p>자세히 보기 <span>화살표</span></p>
+               </div>
+             </div>
+           </a>
+         </div>
+       </div>
+       <div class="cont4 sliderWrap2">
+         <ul class="slider2">
+           <li>
+             <a href="https://youtu.be/DKfbKJ9qT4s" class="youtube">
+               <img src="images/content4-1.jpg" alt="바다">
+               <div class="fill">
+                 <div class="playBtn">플레이</div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="https://youtu.be/M5vbPb8GTlU" class="youtube">
+               <img src="images/content4-2.jpg" alt="초밥">
+               <div class="fill">
+                 <div class="playBtn">플레이</div>
+               </div>
+             </a>
+           </li>
+         </ul>
+       </div>
+     </section>
+     <section id="contents2">
+       <!-- w100% -->
+       <h2>수산 자원을 수확하는 방식</h2>
+       <hr>
+       <p>노르웨이에서는 미래 지속적이고 풍부한 수산 자원 유지를 위해 연구, 법률 제정, 규제 및<br>
+         통제를 포함한 체계를 형성해 왔습니다.</p>
+       <ul class="clearfix">
+         <li>
+           <a href="#!">
+             <div class="card">
+               <div class="card-icon1">icon1</div>
+               <div class="card-txt">
+                 <h3>연구</h3>
+                 <p>해양 연구소(IMR)</p>
+                 <p>국제해양개발위원회(ICES)</p>
+                 <p>국립영양수산물연구소(NIFES)</p>
+               </div>
+             </div>
+           </a>
+         </li>
+         <li>
+           <a href="#!">
+             <div class="card">
+               <div class="card-icon2">icon2</div>
+               <div class="card-txt">
+                 <h3>법률</h3>
+                 <p>노르웨이 의회</p>
+               </div>
+             </div>
+           </a>
+         </li>
+         <li>
+           <a href="#!">
+             <div class="card">
+               <div class="card-icon3">icon3</div>
+               <div class="card-txt">
+                 <h3>규제</h3>
+                 <p>통상</p>
+                 <p>산업수산부</p>
+                 <p>노르웨이 수산청</p>
+                 <p>지역어업 관리기구(RFMO)</p>
+               </div>
+             </div>
+           </a>
+         </li>
+         <li>
+           <a href="#!">
+             <div class="card">
+               <div class="card-icon4">icon4</div>
+               <div class="card-txt">
+                 <h3>통제</h3>
+                 <p>노르웨이 수산청</p>
+                 <p>판매 조직</p>
+                 <p>해안경비대</p>
+                 <p>노르웨이 식품안전청</p>
+               </div>
+             </div>
+           </a>
+         </li>
+       </ul>
+     </section>
+     <section id="contents3">
+       <!-- 1240px -->
+       <div class="cont-tit">
+         <div class="cont-icon1-1">연어아이콘</div>
+         <div class="cont-icon1-2">연어아이콘</div>
+         <div class="cont-icon2">물결아이콘</div>
+         <h3>연어의 종류</h3>
+         <p>연어는 다양한 종이 있으며, 각기 다른 요리에 어울리는 품질과 맛을 갖추었습니다.
+           주로 소비되는 종으로는 대서양 연어(Atlantic salmon)와 태평양 연어(Pacific salmon)가 있습니다.</p>
+         <div class="controls">
+           <span class="prev">이전</span>
+           <span class="next">다음</span>
+         </div>
+       </div> <!-- 연어의 종류 -->
+       <div class="sliderWrap3">
+         <ul class="slider3">
+           <li>
+             <div class="cont-list">
+               <a href="#!">
+                 <div class="list-icons">
+                   <div class="list-icon">연어아이콘</div>
+                 </div>
+                 <div class="list-icons-r">
+                   <div class="list-icon-r">연어아이콘</div>
+                 </div>
+                 <img src="images/atlantic-salmon.png" alt="대서양연어">
+               </a>
+               <a href="#!">
+                 <div class="list-icons-r">
+                   <div class="list-icon-r">연어아이콘</div>
+                 </div>
+                 <div class="list-icons">
+                   <div class="list-icon">연어아이콘</div>
+                 </div>
+                 <div class="txt-box">
+                   <h3>대서양연어</h3>
+                   <p>대서양 연어는 전세계적으로 가장 널리 알려진 종입니다. 노르웨이의 북극해 환경에서...</p>
+                 </div>
+               </a>
+             </div> <!-- 대서양연어 -->
+             <div class="cont-list">
+               <a href="#!">
+                 <div class="list-icons-r">
+                   <div class="list-icon-r">연어아이콘</div>
+                 </div>
+                 <div class="list-icons">
+                   <div class="list-icon">연어아이콘</div>
+                 </div>
+                 <div class="txt-box">
+                   <h3>곱사연어</h3>
+                   <p>미국과 러시아에서 어획되는 자연산 연어입니다. 대서양 연어보다 크기가 작고...</p>
+                 </div>
+               </a>
+               <a href="#!">
+                 <div class="list-icons">
+                   <div class="list-icon">연어아이콘</div>
+                 </div>
+                 <div class="list-icons-r">
+                   <div class="list-icon-r">연어아이콘</div>
+                 </div>
+                 <img src="images/pink-salmon.png" alt="곱사연어">
+               </a>
+             </div> <!-- 곱사연어 -->
+             <div class="cont-list">
+               <a href="#!">
+                 <div class="list-icons">
+                   <div class="list-icon">연어아이콘</div>
+                 </div>
+                 <div class="list-icons-r">
+                   <div class="list-icon-r">연어아이콘</div>
+                 </div>
+                 <img src="images/chum-salmon.png" alt="백연어">
+               </a>
+               <a href="#!">
+                 <div class="list-icons-r">
+                   <div class="list-icon-r">연어아이콘</div>
+                 </div>
+                 <div class="list-icons">
+                   <div class="list-icon">연어아이콘</div>
+                 </div>
+                 <div class="txt-box">
+                   <h3>백연어</h3>
+                   <p>알래스카와 일본에서 어획되며, 주요 소비국가는 중국(중국에서 가공 및 재수출 합니다)과...</p>
+                 </div>
+               </a>
+             </div> <!-- 백연어 -->
+           </li>
+           <li>
+             <div class="cont-list">
+               <a href="#!">
+                 <div class="list-icons-r">
+                   <div class="list-icon-r">연어아이콘</div>
+                 </div>
+                 <div class="list-icons">
+                   <div class="list-icon">연어아이콘</div>
+                 </div>
+                 <div class="txt-box">
+                   <h3>은연어</h3>
+                   <p>일본에서 가장 많이 소비되는 종으로, 최근에는 러시아에서도 인기를 얻고 있습니다...</p>
+                 </div>
+               </a>
+               <a href="#!">
+                 <div class="list-icons">
+                   <div class="list-icon">연어아이콘</div>
+                 </div>
+                 <div class="list-icons-r">
+                   <div class="list-icon-r">연어아이콘</div>
+                 </div>
+                 <img src="images/coho-salmon.png" alt="은연어">
+               </a>
+             </div> <!-- 은연어 -->
+             <div class="cont-list">
+               <a href="#!">
+                 <div class="list-icons">
+                   <div class="list-icon">연어아이콘</div>
+                 </div>
+                 <div class="list-icons-r">
+                   <div class="list-icon-r">연어아이콘</div>
+                 </div>
+                 <img src="images/sockeye-salmon.png" alt="홍연어">
+               </a>
+               <a href="#!">
+                 <div class="list-icons-r">
+                   <div class="list-icon-r">연어아이콘</div>
+                 </div>
+                 <div class="list-icons">
+                   <div class="list-icon">연어아이콘</div>
+                 </div>
+                 <div class="txt-box">
+                   <h3>홍연어</h3>
+                   <p>훈제, 소금에 절인 형태, 또는 회로 즐기며, 고급 연어로 알려져 있습니다. 러시아 및 알래스카에서...</p>
+                 </div>
+               </a>
+             </div> <!-- 홍연어 -->
+             <div class="cont-list">
+               <a href="#!">
+                 <div class="list-icons-r">
+                   <div class="list-icon-r">연어아이콘</div>
+                 </div>
+                 <div class="list-icons">
+                   <div class="list-icon">연어아이콘</div>
+                 </div>
+                 <div class="txt-box">
+                   <h3>왕연어</h3>
+                   <p>대서양 연어와 경쟁되는 어종이지만 어획량이 많지 않습니다. 주로 알래스카, 캐나다,...</p>
+                 </div>
+               </a>
+               <a href="#!">
+                 <div class="list-icons">
+                   <div class="list-icon">연어아이콘</div>
+                 </div>
+                 <div class="list-icons-r">
+                   <div class="list-icon-r">연어아이콘</div>
+                 </div>
+                 <img src="images/chinook-salmon.png" alt="왕연어">
+               </a>
+             </div> <!-- 왕연어 -->
+           </li>
+         </ul>
+       </div>
+     </section>
+     <section id="contents4">
+       <!-- 1240px -->
+       <div class="banner">
+         <a href="#!">
+           <h3>노르웨이 양식업의 역사</h3>
+           <p>바다 양식 연어는 1970년대 초에 노르웨이에서
+             개발한 현대적인 기법입니다.</p>
+           <div class="button">
+             <p>자세히 보기 <span>화살표</span></p>
+           </div>
+         </a>
+       </div>
+       <div class="banner">
+         <a href="#!">
+           <h3>세계 각지의 연어</h3>
+           <p>노르웨이 연어는 전세계의 다양한 문화권에서
+             대중적인 음식으로 자리잡았습니다.</p>
+           <div class="button">
+             <p>자세히 보기 <span>화살표</span></p>
+           </div>
+         </a>
+       </div>
+     </section>
+   </div>
+   <footer id="footer">
+     <!-- w100% -->
+     <div class="footer-group">
+       <!-- 1240px -->
+       <div class="footer-logo">연어아카데미</div>
+     </div>
+     <div class="footer-info">
+       <ul>
+         <li><a href="#!">Seafood.no</a></li>
+         <li><a href="#!">Cookie information</a></li>
+         <li><a href="#!">About us</a></li>
+       </ul>
+       <p>문의하기 <span class="p-1">:</span> <span class="p-2">+47 77 60 33 33 &nbsp;mail@seafood.no</span></p>
+       <p>방문 주소 <span class="p-1">:</span> <span class="p-2">Norwegian Seafood Council &nbsp;Stortorget 1 &nbsp;PO Box 6176 &nbsp;9291 Tromsø</span></p>
+       <p>Copyright &copy; Norwegian Seafood Council</p>
+     </div>
+     <div class="follow">
+       <ul class="clearfix">
+         <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
+         <li><a href="#!"><i class="fab fa-twitter"></i></a></li>
+         <li><a href="#!"><i class="fab fa-youtube"></i></a></li>
+       </ul>
+     </div>
+   </footer>
+
+   <script src="js/jquery-3.1.1.min.js"></script>
+   <script src="js/wow.js"></script>
+   <script src="js/jquery.bxslider.js"></script>
+   <script src="js/owl.carousel.min.js"></script>
+   <script src="js/jquery.colorbox-min.js"></script>
+   <script src="js/script.js"></script>
+
+ </body>
+
+ </html>
