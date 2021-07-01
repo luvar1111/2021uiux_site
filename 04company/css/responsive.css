@@ -81,10 +81,11 @@
 
   /* cont3 */
   .cont3 {display: none;}
-  .sliderWrap4 {display: block; width: 100%;}
-  .carousel a {display: block; position: relative;}
-  .carousel a:hover img {transform:none}
-  .carousel h4 {font-size: 4.2vw; position: absolute; top: 6vw; left: 50%; transform: translateX(-50%);}
+  .sliderWrap4 {display: block}
+  .sliderWrap4 .slider4 {}
+  .carousel {width: 100%;}
+  .carousel a {display: block; position: relative}
+  .carousel h4 {font-size: 4.2vw; color: #011e64; position: absolute; top: 6vw; left: 50%; transform: translateX(-50%)}
   .carousel h4.cdd1d7 {color: #cdd1d7;}
 
   /* cont4 */

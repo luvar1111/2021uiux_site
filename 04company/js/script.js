@@ -205,6 +205,7 @@ $(".cont3 a").hover(function() {
   }, 300);
 });
 
+let cw1 = $("section > div").width()/2;
 $(".slider4").bxSlider({
   auto:true,
   pager:false,
@@ -213,8 +214,10 @@ $(".slider4").bxSlider({
   pause: 6000,
   autoHover:true,
   minSlides:2,
-  moveSlides:3,
-  shrinkItems:true
+  maxSlides:2,
+  moveSlides:1,
+  shrinkItems:true,
+  slideWidth:cw1
 })
 
 // cont4
