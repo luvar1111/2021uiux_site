@@ -52,7 +52,7 @@
   #container {transform: none}
 
   /* contents1 */
-  #contents1 {width: 100%; padding:0 20px;}
+  #contents1 {width: 100%; padding:0 20px; margin-bottom: 40px;}
   #contents1 > div {height: 100%; border-radius:5px; overflow: hidden;}
   #contents1 a > img {width: 100%}
 
@@ -80,14 +80,31 @@
   .cont2 .slider3 p {font-size: 3vw; text-align: justify; line-height: 5vw; letter-spacing: -0.05em}
 
   /* cont3 */
-  .cont3 {display: none;}
-  .sliderWrap4 {display: block}
-  .sliderWrap4 .slider4 {}
-  .carousel {width: 100%;}
-  .carousel a {display: block; position: relative}
-  .carousel h4 {font-size: 4.2vw; color: #011e64; position: absolute; top: 6vw; left: 50%; transform: translateX(-50%)}
-  .carousel h4.cdd1d7 {color: #cdd1d7;}
+  .cont3 {width: 100%;}
+  .cont3 h4 {font-size: 4.2vw; top: 5vw;}
+  .cont3 a:hover img {transform:none}
+  .cont3 .fill {display: none;}
 
   /* cont4 */
   .cont4 {display: none;}
+
+  /* contents2 */
+  #contents2 {background-position: center; padding-top: 50px; margin-bottom: 40px; height: 400px;}
+  #contents2 h2 {font-size: 20px; margin-bottom: 20px;}
+  #contents2 hr {width: 100px; height:2px}
+  #contents2 p {display: none;}
+  #contents2 ul {width: 230px}
+  #contents2 li {width:100px}
+  #contents2 li:nth-child(2n) {margin-left:30px}
+  #contents2 li:nth-child(1),
+  #contents2 li:nth-child(2) {margin-bottom: 30px;}
+  #contents2 li a {height: 100px; padding-top: 7px;}
+  #contents2 a div:first-child {width: 48px; height:60px; margin-bottom:10px;}
+  #contents2 .card-icon1 {background-position: 0 -360px;}
+  #contents2 .card-icon2 {background-position: -48px -360px;}
+  #contents2 .card-icon3 {background-position: -96px -360px;}
+  #contents2 .card-icon4 {background-position: -144px -360px;}
+  #contents2 a h4 {font-size: 14px}
+
+
 }

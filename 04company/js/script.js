@@ -44,14 +44,14 @@ $(".slider").bxSlider({
 });
 
 // container
-$(window).resize(function(){
-  if($(this).width() <= 640){
-    let cw = $("section > div").width()
-    $("section > div").height(cw / 2)
-  }else{
-    $("section > div").height(310)
-  }
-})
+// $(window).resize(function(){
+//   if($(this).width() <= 640){
+//     let cw = $("section > div").width()
+//     $("section > div").height(cw / 2)
+//   }else{
+//     $("section > div").height(310)
+//   }
+// })
 
 //contents1
 // cont1
@@ -183,7 +183,8 @@ $(".sliderWrap1 .prev").click(function() {
 function slide() {
   $(".sliderWrap1 .next").trigger("click")
 }
-setInterval(slide, 6000);
+
+setInterval(slide, 6000)
 
 $(".slider3").bxSlider({
   auto:true,
@@ -205,23 +206,25 @@ $(".cont3 a").hover(function() {
   }, 300);
 });
 
-let cw1 = $("section > div").width()/2;
-$(".slider4").bxSlider({
-  auto:true,
-  pager:false,
-  controls:false,
-  speed: 500,
-  pause: 6000,
-  autoHover:true,
-  minSlides:2,
-  maxSlides:2,
-  moveSlides:1,
-  shrinkItems:true,
-  slideWidth:cw1
+$(".owl-carousel").owlCarousel({
+  autoplayHoverPause:true,
+  responsiveRefreshRate:0,
+  responsive:{
+    0:{
+      items:2,
+      autoplay:true,
+      loop:true,
+      autoplaySpeed:500,
+      autoplayTimeout:6000
+    },
+    641:{
+      items:3
+    }
+  }
 })
 
 // cont4
-$(".slider5").bxSlider({
+$(".slider4").bxSlider({
   auto:true,
   pager:false,
   controls:false,
