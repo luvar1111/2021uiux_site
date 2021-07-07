@@ -5,7 +5,7 @@
   /* header */
   #header {margin-bottom: 40px;}
   .fixed-area {background:rgba(1,15,43,.5); height: 60px}
-  .fixed-area.fixed {height: 60px}
+  .fixed-area.fixed {height:60px}
   .headerTop {width:100%}
   .headerTop .header-tit,
   .headerTop .toggleBtn,
@@ -22,17 +22,17 @@
   .headerTop .toggleBtn.change .bar1 {left: 50%; top: 50%; transform:translate(-50%, -50%) rotate(-45deg)}
   .headerTop .toggleBtn.change .bar2 {opacity:0}
   .headerTop .toggleBtn.change .bar3 {left: 50%; top: 50%; transform:translate(-50%, -50%) rotate(45deg)}
-  .headerTop .menuWrap {position: absolute; top: 100%; right:-100%; width: 70%; height: 580px; background: #011e64; padding-top: 40px;
+  .headerTop .menuWrap {position: absolute; top: 100%; right:-100%; width: 65%; height:700px; background: #011e64; padding-top: 60px;
                         display:flex; flex-direction: column; align-items: center}
   .headerTop .menuWrap ul {float:none;}
   .menuWrap .main-menu {margin-right: 0; order:2; margin-bottom: 60px;}
-  .menuWrap .main-menu li {float:none; margin-bottom: 20px;}
+  .menuWrap .main-menu li {float:none; margin-bottom: 25px;}
   .menuWrap .main-menu li:last-child {margin-bottom:0;}
-  .menuWrap .main-menu li a {padding: 10px; font-size: 16px; text-align: center; text-shadow: none}
-  .menuWrap .language {width: 80px; transform: none; order:1; margin-bottom: 40px;}
-  .menuWrap .language li {width: 40px; font-size: 12px; line-height: 26px;}
-  .menuWrap .language li:first-child {border-radius:15px 0 0 15px}
-  .menuWrap .language li:last-child {border-radius:0 15px 15px 0}
+  .menuWrap .main-menu li a {padding: 10px; font-size: 18px; text-align: center; text-shadow: none}
+  .menuWrap .language {width:90px; transform: none; order:1; margin-bottom: 40px;}
+  .menuWrap .language li {width: 45px; line-height: 30px; font-size:14px}
+  .menuWrap .language li:first-child {border-radius:10px 0 0 10px}
+  .menuWrap .language li:last-child {border-radius:0 10px 10px 0}
   .menuWrap .follow {order:3}
   .menuWrap .follow li {float: left;}
   .menuWrap .follow li + li {margin-left: 20px;}
@@ -41,10 +41,10 @@
   .menuWrap .follow li:nth-child(2):hover a {color: #1DA1F2;}
   .menuWrap .follow li:nth-child(3):hover a {color: #FF0000;}
 
-  .sliderWrap .slider li {height: 275px}
-  .sliderWrap .slider .slider-txt {width:320px; top: 35%;}
-  .sliderWrap .slider-txt h1 {font-size: 30px; margin-bottom: 20px;}
-  .sliderWrap .slider-txt p {font-size: 14px;}
+  .sliderWrap .slider li {height: 360px}
+  .sliderWrap .slider .slider-txt {top: 35%;}
+  .sliderWrap .slider-txt h1 {font-size: 36px; margin-bottom: 30px;}
+  .sliderWrap .slider-txt p {font-size: 16px;}
   .sliderWrap .slider-txt br {display: block;}
   .sliderWrap .pager {display: none;}
 
@@ -60,7 +60,7 @@
   .cont1 {width: 100%; margin-bottom: 20px;}
   .cont1 h4:first-child,
   .cont1 .cont1-img {display: none;}
-  .cont1 .cont1-tit {width: 60vw; font-size: 5vw; text-align: center; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+  .cont1 .cont1-tit {width: 100%; text-align: center; top: 50%; left: 50%; transform: translate(-50%, -50%);}
   .cont1 h4:last-child {display: block; transform:translateY(-100%) rotateX(180deg); opacity:0; animation:shadow .3s .5s forwards}
   @keyframes shadow {
     to{transform: translateY(0) rotateX(180deg); opacity:0.7}
@@ -73,15 +73,15 @@
   .cont2 .sliderWrap3 {display: block; width: 100%}
   .cont2 .slider3 li {display:flex;}
   .cont2 .slider3 a {width: 50%; position: relative; background: #eff8ff;}
-  .cont2 .slider3 a:first-child {padding:0 6vw; color: #010f2b; display:flex; flex-direction: column; justify-content: center;}
+  .cont2 .slider3 a:first-child {padding:0 40px; color: #010f2b; display:flex; flex-direction: column; justify-content: center;}
   .cont2 .slider3 a:first-child:after {content:""; width: 0; height: 0; position: absolute; left: 100%; top: 50%; transform: translateY(-50%);
                                        border:3vw solid transparent; border-left-color:#eff8ff; z-index: 1}
-  .cont2 .slider3 h4 {font-size: 4.2vw; text-align: center; margin-bottom: 2.5vw;}
-  .cont2 .slider3 p {font-size: 3vw; text-align: justify; line-height: 5vw; letter-spacing: -0.05em}
+  .cont2 .slider3 h4 {font-size: 26px; text-align: center; margin-bottom: 15px;}
+  .cont2 .slider3 p {text-align: justify; line-height: 1.5em; letter-spacing: -0.05em}
 
   /* cont3 */
   .cont3 {width: 100%;}
-  .cont3 h4 {font-size: 4.2vw; top: 5vw;}
+  .cont3 h4 {width: 100%; text-align: center; top: 30px;}
   .cont3 a:hover img {transform:none}
   .cont3 .fill {display: none;}
 
@@ -89,22 +89,22 @@
   .cont4 {display: none;}
 
   /* contents2 */
-  #contents2 {background-position: center; padding-top: 50px; margin-bottom: 40px; height: 400px;}
-  #contents2 h2 {font-size: 20px; margin-bottom: 20px;}
-  #contents2 hr {width: 100px; height:2px}
+  #contents2 {background:transparent; padding-top: 50px; margin-bottom: 40px; height: 600px;}
+  #contents2 h2 {font-size: 30px}
+  #contents2 hr {width: 150px; height:3px}
   #contents2 p {display: none;}
-  #contents2 ul {width: 230px}
-  #contents2 li {width:100px}
-  #contents2 li:nth-child(2n) {margin-left:30px}
+  #contents2 ul {width: 360px}
+  #contents2 li {width:150px}
+  #contents2 li:nth-child(2n) {margin-left:60px}
   #contents2 li:nth-child(1),
   #contents2 li:nth-child(2) {margin-bottom: 30px;}
-  #contents2 li a {height: 100px; padding-top: 7px;}
-  #contents2 a div:first-child {width: 48px; height:60px; margin-bottom:10px;}
-  #contents2 .card-icon1 {background-position: 0 -360px;}
-  #contents2 .card-icon2 {background-position: -48px -360px;}
-  #contents2 .card-icon3 {background-position: -96px -360px;}
-  #contents2 .card-icon4 {background-position: -144px -360px;}
-  #contents2 a h4 {font-size: 14px}
+  #contents2 li a {height: 180px; padding-top: 20px;}
+  #contents2 a div:first-child {margin-bottom:15px;}
+  /* #contents2 .card-icon1 {background-position: 0 -360px;}
+  #contents2 .card-icon2 {background-position: -60px -360px;}
+  #contents2 .card-icon3 {background-position: -120px -360px;}
+  #contents2 .card-icon4 {background-position: -180px -360px;} */
+  #contents2 a h4 {font-size: 18px}
 
 
 }

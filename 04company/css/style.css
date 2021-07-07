@@ -36,23 +36,23 @@ body {min-width:1240px; background: #e6e9ea; font-family: 'Times New Roman', Ari
     margin-bottom: 0;
 }
 
+.sliderWrap {position: relative;}
 .sliderWrap .slider li {height: 1000px; display: none;}
-.sliderWrap .slider li.slider1st {background:linear-gradient(rgba(1,15,43,0.5),#010f2b),
+.sliderWrap .slider li.slider1st {background:linear-gradient(rgba(1,15,43,0.6),rgba(1,15,43,0.8)),
                                   url(../images/slider-bg1.jpg) no-repeat center / cover}
-.sliderWrap .slider li.slider2nd {background:linear-gradient(rgba(1,15,43,0.5),#010f2b),
+.sliderWrap .slider li.slider2nd {background:linear-gradient(rgba(1,15,43,0.6),rgba(1,15,43,0.8)),
                                   url(../images/slider-bg2.jpg) no-repeat center / cover}
-.sliderWrap .slider li.slider3rd {background:linear-gradient(rgba(1,15,43,0.5),#010f2b),
+.sliderWrap .slider li.slider3rd {background:linear-gradient(rgba(1,15,43,0.6),rgba(1,15,43,0.8)),
                                   url(../images/slider-bg3.jpg) no-repeat center / cover}
-.sliderWrap .slider li.slider4th {background:linear-gradient(rgba(1,15,43,0.5),#010f2b),
+.sliderWrap .slider li.slider4th {background:linear-gradient(rgba(1,15,43,0.6),rgba(1,15,43,0.8)),
                                   url(../images/slider-bg4.jpg) no-repeat center / cover}
-.sliderWrap .slider li.slider5th {background:linear-gradient(rgba(1,15,43,0.5),#010f2b),
+.sliderWrap .slider li.slider5th {background:linear-gradient(rgba(1,15,43,0.6),rgba(1,15,43,0.8)),
                                   url(../images/slider-bg5.jpg) no-repeat center / cover}
 .sliderWrap .slider .slider-txt {width: 800px; position:absolute; top:30%; left:50%; transform:translateX(-50%); color:#fff; text-align:center}
 .sliderWrap .slider-txt h1 {font-size: 60px; font-weight:normal; margin-bottom: 50px;}
 .sliderWrap .slider-txt p {font-size: 20px; line-height: 1.5em;}
 .sliderWrap .slider-txt br {display: none;}
-.sliderWrap .slider li:nth-child(3) br {display: block;}
-.sliderWrap .pager {position: absolute; bottom: 30%; left: 50%; transform: translateX(-50%); display:flex}
+.sliderWrap .pager {position: absolute; bottom: 40%; left: 50%; transform: translateX(-50%); display:flex}
 .sliderWrap .pager a {display: block; width: 10px; height: 10px; border-radius:50%; background: #fff; transition:.3s}
 .sliderWrap .pager a + a {margin-left: 20px;}
 .sliderWrap .pager a.active {transform:scale(1.6); background: #0377d3;}
