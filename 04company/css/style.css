@@ -141,3 +141,5 @@ body {min-width:1240px; background: #e6e9ea; font-family: 'Times New Roman', Ari
 #contents2 .card-icon4 {background:url(../images/img-sprite.png) no-repeat -240px -260px;}
 #contents2 a h4 {font-size: 24px; margin-bottom: 10px;}
 #contents2 a p {line-height: 1.5em;}
+
+#contents3 {background: #f00;}
