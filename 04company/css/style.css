@@ -124,8 +124,9 @@ body {min-width:1240px; background: #e6e9ea; font-family: 'Times New Roman', Ari
 .cont4 .playBtn {text-indent: -9999px; width: 70px; height: 70px; background:url(../images/play.svg) no-repeat}
 
 /* contents2 */
-#contents2 {background:linear-gradient(rgba(1,15,43,0.6), rgba(1,15,43,0.6)), url(../images/contentsbg.jpg) no-repeat 0 310px fixed; background-size:cover;
+#contents2 {background:linear-gradient(rgba(1,15,43,0.6), rgba(1,15,43,0.6)), url(../images/contentsbg.jpg) no-repeat 50% 310px fixed; background-size:cover;
             height:750px; padding-top:100px; color:#e6e9ea; text-align:center; margin-bottom:80px;}
+#contents2 .fixedbg {display: none;}
 #contents2 h2 {font-size: 42px; margin-bottom: 30px;}
 #contents2 hr {width: 200px; height: 4px; margin: auto; margin-bottom: 30px; background: #e6e9ea;}
 #contents2 > p {font-size: 20px; line-height: 1.5em; margin-bottom: 60px;}
