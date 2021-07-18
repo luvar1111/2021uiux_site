@@ -89,7 +89,7 @@
   .cont4 {display: none;}
 
   /* contents2 */
-  #contents2 {background:transparent; padding-top: 50px; margin-bottom: 40px; min-height: 600px;}
+  #contents2 {background:transparent; padding-top: 50px; margin-bottom: 40px; height: 600px;}
   #contents2 .fixedbg {display: block;}
   #contents2 h2 {font-size: 30px}
   #contents2 hr {width: 150px; height:3px}
