@@ -242,4 +242,5 @@ $(".youtube").colorbox({
 // contents2
 $("#contents2").parallax({
   imageSrc:'./images/contentsbg.jpg',
-  speed:0})
+  speed:0,
+  androidFix:false})
